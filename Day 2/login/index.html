@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <style>
+        body{
+            margin: 0;
+            background-image: url('background.jpg');
+            background-size: contain;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+        p ,label{
+            color: white;
+            margin-top:15px;
+            margin-bottom: 5px;
+        }
+        .container{
+            width:400px;
+            background-color: rgba(255, 165, 0, 0.85);
+            border:2px solid black;
+            border-radius: 15px;
+            padding: 25px 30px 25px 30px;
+            margin: 20px auto;
+            box-shadow: 0 10 25px rgba(0,0,0,0.5);
+        }
+        h2{
+            margin-bottom: 20px;
+            text-align: center;
+            color: white;
+            font-size: 32px; 
+        }
+        input[type="text"],
+         input[type="email"], 
+         input[type="number"],
+          input[type="date"],
+          input[type="password"],
+           select,
+            textarea{
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button{
+            width: 100%;
+            padding: 10px ;
+            background-color:#007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        button:hover{
+            background-color: #0056b3;
+            transform: scale(1.03);
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login Form</h2>
+        <form action="" method="post">
+        <p>Enter your name</p>
+        <input type="text" placeholder ="Enter your name" required>
+        <br>
+        <p>Enter your email address</p>
+        <input type="email" placeholder ="Enter your email address" required>
+        <br>
+        <p>Enter your phone number</p>
+        <input type="number" placeholder ="Enter your phone number" required>
+        <br>
+        <p>Enter your password</p>
+        <input type="password" placeholder ="Enter your password" required>
+        <br>
+        <p>Select your gender</p>
+        <lable for ="id 100">
+            <input type ="radio"value="male"name ="gender" id="100">Male
+        </lable>
+        <br>
+        <lable for ="id 101">
+            <input type ="radio" value ="female" name ="gender" id="101">Female
+        </lable>
+        <br>
+        <p>Enter your date of birth</p>
+        <input type ="date" required>
+        <br>
+        <p>Enter your address</p>
+        <br>
+        <input type="text" placeholder ="Enter your address" required>
+        <br>
+        <p>Your branch</p>
+        <br>
+        <select name ="site review" id="review" required>
+            <option value="Computer Science">Computer Science</option>
+            <br>
+            <option value="Electrical Engineering">Electrical Engineering</option>
+            <br>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+            <br>
+            <option value="Civil Engineering">Civil Engineering</option>
+            <br>
+        </select>
+        <br><br>
+        <lable>Hobbies :</lable>
+        <input type="checkbox" name="Hobbies" value="Reading">Reading
+        <input type="checkbox" name="Hobbies" value="Writing" >Writing
+        <input type="checkbox" name="Hobbies" value="Playing">Playing
+        <br><br>
+        <lable>Upload photo :</lable>
+        <input type="file" name="photo" id="photo" required> 
+        <br><br>
+         <p>Some thing about you:</p>
+        <textarea name="text" id="102" placeholder="Tell us about yourself..." required>      
+        </textarea>
+        <br><br>
+        <p><b>Thank you for filling out this form!</b></p>
+        <button type="submit">Submit</button>
+        <br><br>
+         <button type="reset">Reset</button>
+         <br><br>
+         
+    </form>
+</body>
+</html>
