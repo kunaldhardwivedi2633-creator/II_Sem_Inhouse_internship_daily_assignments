@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKIT Student Directory</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>SKIT Student Directory</h1>
+
+    <div class="top-bar">
+
+        <h3>Total Students : <span id="totalStudent">10</span></h3>
+
+        <button id="modeBtn" onclick="darkMode()">
+            🌙 Dark Mode
+        </button>
+
+    </div>
+
+</header>
+
+<div class="search-box">
+
+<input
+type="text"
+id="search"
+placeholder="Search Student Name">
+
+<button onclick="searchStudent()">
+Search
+</button>
+
+<button onclick="resetStudents()">
+Reset
+</button>
+
+</div>
+
+<div id="message"></div>
+
+<div id="studentContainer">
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
