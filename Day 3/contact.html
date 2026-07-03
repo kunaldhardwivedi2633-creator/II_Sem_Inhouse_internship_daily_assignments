@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7fb;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #12355b;
+            color: white;
+            text-align: center;
+            padding: 28px 20px;
+        }
+
+        header h1 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .contact-section {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            width: min(1050px, 92%);
+            margin: 34px auto;
+        }
+
+        .contact-card {
+            flex: 1 1 360px;
+            background-color: white;
+            padding: 26px;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(31, 41, 55, 0.08);
+        }
+
+        .contact-card h2 {
+            color: #12355b;
+            margin-bottom: 14px;
+        }
+
+        .contact-card ul {
+            padding-left: 20px;
+            margin-top: 14px;
+        }
+
+        .contact-card li {
+            margin-bottom: 10px;
+        }
+
+        .contact-image {
+            flex: 1 1 360px;
+        }
+
+        .contact-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(31, 41, 55, 0.12);
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 11px 20px;
+            border-radius: 6px;
+            background-color: #12355b;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #0b2440;
+        }
+
+        @media (max-width: 800px) {
+            .contact-section {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <p>We are here to help with admission and college inquiries</p>
+    </header>
+
+    <main class="contact-section">
+        <section class="contact-card">
+            <h2>Get in Touch</h2>
+            <p>For any inquiries or assistance, please feel free to contact us through the following channels:</p>
+            <ul>
+                <li>Email: info@skit.edu.in</li>
+                <li>Phone: 8505003008</li>
+                <li>Address: Swami Keshvanand Institute of Technology, Management & Gramothan, Jagatpura, Jaipur, Rajasthan, India</li>
+            </ul>
+            <a class="btn" href="index.html">Back to Home</a>
+        </section>
+
+        <div class="contact-image">
+            <img src="KD.jpeg" alt="Contact SKIT">
+        </div>
+    </main>
+</body>
+</html>

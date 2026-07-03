@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7fb;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #12355b;
+            color: white;
+            text-align: center;
+            padding: 28px 20px;
+        }
+
+        header h1 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .container {
+            width: min(1050px, 92%);
+            margin: 30px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 4px 16px rgba(31, 41, 55, 0.08);
+            margin-bottom: 28px;
+        }
+
+        th {
+            background-color: #12355b;
+            color: white;
+        }
+
+        th,
+        td {
+            border: 1px solid #d6dee8;
+            padding: 14px;
+            text-align: center;
+        }
+
+        .course-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        .course-card {
+            flex: 1 1 280px;
+            background-color: white;
+            padding: 22px;
+            border-radius: 8px;
+            border-top: 5px solid #ffd166;
+            box-shadow: 0 4px 16px rgba(31, 41, 55, 0.08);
+        }
+
+        .course-card h2 {
+            color: #12355b;
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .course-card ul {
+            padding-left: 20px;
+        }
+
+        .course-card li {
+            margin-bottom: 8px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 11px 20px;
+            border-radius: 6px;
+            background-color: #12355b;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #0b2440;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Courses and Duration</h1>
+        <p>Explore programs available at SKIT Jaipur</p>
+    </header>
+
+    <main class="container">
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>Duration</th>
+            </tr>
+            <tr>
+                <td>B.Tech</td>
+                <td>4 years</td>
+            </tr>
+            <tr>
+                <td>M.Tech</td>
+                <td>2 years</td>
+            </tr>
+            <tr>
+                <td>MBA</td>
+                <td>2 years</td>
+            </tr>
+        </table>
+
+        <div class="course-grid">
+            <section class="course-card">
+                <h2>B.Tech Branches</h2>
+                <ul>
+                    <li>Computer Science and Engineering</li>
+                    <li>Information Technology</li>
+                    <li>Electronics and Communication Engineering</li>
+                    <li>Electrical Engineering</li>
+                    <li>Civil Engineering</li>
+                    <li>Mechanical Engineering</li>
+                    <li>Automobile Engineering</li>
+                    <li>Artificial Intelligence and Data Science</li>
+                    <li>Internet of Things (IoT)</li>
+                </ul>
+            </section>
+
+            <section class="course-card">
+                <h2>M.Tech Branches</h2>
+                <ul>
+                    <li>Cyber Security</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Machine Learning</li>
+                    <li>Data Science</li>
+                </ul>
+            </section>
+
+            <section class="course-card">
+                <h2>Other Programs</h2>
+                <ul>
+                    <li>MBA specializations are available for management students.</li>
+                    <li>Pharmacy is available under Swami Keshwanand Institute of Pharmacy.</li>
+                    <li><a href="https://www.skipjpr.org/" target="_blank">Click here for pharmacy information</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <a class="btn" href="index.html">Back to Home</a>
+    </main>
+</body>
+</html>

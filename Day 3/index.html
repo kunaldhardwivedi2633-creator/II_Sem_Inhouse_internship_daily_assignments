@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #eef3f8;
+            color: black;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0b2c4d;
+            padding: 12px 40px;
+            box-shadow: 0 3px 10px gray;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .brand img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: orange;
+        }
+
+        .login-btn {
+            background-color: #ffb703;
+            color: black;
+            padding: 8px 14px;
+            border-radius: 5px;
+        }
+
+        .login-btn:hover {
+            background-color: white;
+            color: navy;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 40px;
+            background-image: linear-gradient(rgba(11, 44, 77, 0.8), rgba(11, 44, 77, 0.8)), url("skit.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            min-height: 430px;
+        }
+
+        .hero-content {
+            width: 75%;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero-content h3 {
+            color: #ffcc33;
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .hero-content p {
+            font-size: 17px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: #ffb703;
+            color: black;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            border: 1px solid #ffb703;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: navy;
+        }
+
+        .section {
+            padding: 30px 40px;
+        }
+
+        .section h2 {
+            text-align: center;
+            color: #0b2c4d;
+            font-size: 28px;
+        }
+
+        .about-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .about-list li {
+            background-color: white;
+            border-left: 5px solid #ffb703;
+            padding: 15px;
+            width: 45%;
+            box-shadow: 0 3px 10px lightgray;
+            border-radius: 6px;
+        }
+
+        .quick-links {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin: 25px;
+        }
+
+        footer {
+            background-color: #0b2c4d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #ffcc33;
+        }
+
+        @media (max-width: 800px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .nav-links {
+                margin-top: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-content {
+                width: 100%;
+            }
+
+            .about-list li {
+                width: 100%;
+            }
+        }
+        button{
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Click Button */
+#clickBtn{
+    background-color: #00bcd4;
+    color: white;
+}
+
+#clickBtn:hover{
+    background-color: #0097a7;
+    transform: scale(1.05);
+}
+
+/* Reset Button */
+#resetBtn{
+    background-color: #e74c3c;
+    color: white;
+}
+
+#resetBtn:hover{
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand">
+            <img src="logo.png" alt="SKIT logo">
+            <span>SKIT Jaipur</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="fee.html">Fees</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="form.html">Admission</a></li>
+            <li><a class="login-btn" id="login-btn" href="login form.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Swami Keshvanand Institute of Technology, Management and Gramothan</h1>
+                <h3>Admission open for new batch</h3>
+                <p>
+                    SKIT Jaipur provides engineering, management and pharmacy education with a practical learning
+                    environment, industry interaction and student development opportunities.
+                </p>
+                <div class="hero-buttons">
+                     <a class="btn" id="apply-btn" href="form.html">Apply Now</a>
+                    <a class="btn" id="courses-btn" href="course.html">View Courses</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section">
+            <h2>About SKIT</h2>
+            <ul class="about-list">
+                <li>
+                    Swami Keshvanand Institute of Technology, Management & Gramothan was established in 2000 and is
+                    known as one of the academic excellence centers in Northern India.
+                </li>
+                <li>
+                    The institute is affiliated to Rajasthan Technical University, Kota for graduate and postgraduate
+                    courses in engineering and management.
+                </li>
+                <li>
+                    Located in Jaipur, SKIT focuses on practical orientation, industrial interaction and student-led
+                    activities for overall personality development.
+                </li>
+                <li>
+                    Green landscaping, academic culture and modern learning facilities create a pleasant and dynamic
+                    campus environment for students.
+                </li>
+            </ul>
+        </section>
+
+        <div class="quick-links">
+            <a class="btn" id="courses-details-btn" href="course.html">Courses Details</a>
+            <a class="btn" id="fees-structure-btn" href="fee.html">Fees Structure</a>
+            <a class="btn" id="contact-us-btn" href="contact.html">Contact Us</a>
+            <a class="btn" id="admission-form-btn" href="form.html">Admission Form</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://www.bing.com/maps?q=Swami+Keshvanand+Institute+of+Technology,+Management+&+Gramothan+(SKIT)&ss=ypid.YN8FDCC8DD6AB7B359&name=Swami+Keshvanand+Institute+of+Technology,+Management+&+Gramothan+(SKIT)&cp=26.823122024536133~75.86661529541016&lvl=15&ppois=26.823122024536133_75.86661529541016_Swami+Keshvanand+Institute+of+Technology,+Management+&+Gramothan+(SKIT)&style=r&trfc=&FORM=MPSRPL&mepi=0~~Embedded~LargeMapLink" target="_blank">
+                Click here to see location of SKIT
+            </a>
+        </p>
+    </footer>
+    <p id="display">button clicked 0 times.</p>
+    <h2>Total Clicks: <span id="count">0</span></h2>
+
+<!-- <button id="clickBtn">Click Me</button> -->
+<button id="resetBtn">Reset</button>
+</body>
+ <script>
+
+
+let count = Number(localStorage.getItem("count")) || 0;
+document.getElementById("display").textContent = `Button clicked ${count} times`;
+
+const btns = document.querySelectorAll(".btn");
+
+btns.forEach(function(btn) {
+    btn.addEventListener("click", function() {
+        count++;
+
+        localStorage.setItem("count", count);
+
+        document.getElementById("display").textContent =
+            `Button clicked ${count} times`;
+
+        alert(`Total Clicks: ${count}`);
+    });
+});
+resetBtn.addEventListener("click", function () {
+    count = 0;
+    localStorage.setItem("count", count);
+    countDisplay.textContent = count;
+});
+
+      </script>
+</html>
